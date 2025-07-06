@@ -20,7 +20,7 @@ body {
 }
 
 .navbar__s1__title {
-    color: #A435F0;
+    color: #b70b72;
 }
 
 .mylearning {
@@ -31,7 +31,7 @@ body {
 
 .mylearning__popup {
     position: absolute;
-    background-color: purple;
+    background-color: #b70b72;
     color: white;
     border: solid black 1px;
     border-radius: 15px;
@@ -81,10 +81,19 @@ body {
 }
 
 .catocarises p {
-    background-color: #A435F0;
+    background-color: #f035a5;
     padding: 10px;
     border-radius: 30px;
     color: white;
+    cursor: pointer;
+    border: solid #f035a5;
+}
+
+.catocarises p:hover {
+    background-color: transparent;
+    color: black;
+    border: solid #f035a5;
+    transition: 1s;
 }
 
 .sale_image_offer {
@@ -94,7 +103,24 @@ body {
     background-color: white;
     padding: 30px;
     border-radius: 15px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 
+
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .sale-image img {
