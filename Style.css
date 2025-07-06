@@ -72,6 +72,9 @@ body {
     gap: 10px;
     align-items: center;
 }
+.navbar__s4{
+    display: none;
+}
 
 .catocarises {
     display: flex;
@@ -139,7 +142,9 @@ body {
 }
 
 .course_card {
-    width: 350px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 
 .course_card img {
@@ -198,4 +203,23 @@ body {
 
 .footer_one p {
     margin: 10px;
+}
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .course_card{
+        flex-basis: 40%;
+    }
+    .catocarises{
+        display: none;
+    }
+    .navbar__s2,.navbar__s3{
+        display: none;
+    }
+    .navbar__s4{
+        display: block;
+    }
 }
